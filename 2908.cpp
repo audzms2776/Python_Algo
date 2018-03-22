@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// https://www.acmicpc.net/problem/2908
 int main() {
     string str1, str2;
 
