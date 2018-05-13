@@ -1,12 +1,3 @@
-"""
-time print check! 
-max : 23:59:59
-min : 00:00:00
-
-! least time print !
-"""
-
-
 def solution(a, b, c, d, e, f):
     def time_check(s):
         t = ''
@@ -67,12 +58,12 @@ def solution(a, b, c, d, e, f):
     min_str = time_check(min_str)
     sec_str = time_check(sec_str)
 
-    if hour_str == '24':
+    if int(hour_str) >=  24:
         print('NOT POSSIBLE')
         return
 
-    return '{}:{}:{}'.format(hour_str, min_str, sec_str)
+    print('{}:{}:{}'.format(hour_str, min_str, sec_str)) 
 
 
 if __name__ == '__main__':
-    solution(1, 8, 3, 2, 6, 4)
+    solution(2,9,9,3,2,9)
